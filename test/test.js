@@ -1,20 +1,22 @@
-var mongoose = require('mongoose')
-var mockgoose = require('mockgoose')
 var assert = require('chai').assert
 
-before(function (done) {
-  mockgoose(mongoose).then(function () {
-    mongoose.connect('mongodb://example.com/TestingDB', function (err) {
-      done(err)
-    })
-  })
-})
-
 describe('mongoose-timeseries', function () {
-  it('1', function () {
-    assert.equal(1, 1)
+  it('these tests', function () {
+    assert.equal(1, 1);
   })
-  it('2', function () {
-    assert.equal(2, 2)
+  it("don't test anything", function () {
+    assert.equal(2, 2);
+  })
+  it("and are causing an", function () {
+    assert.equal(3, 3);
+  })
+  it("npm audit warning", function () {
+    assert.equal(4, 4);
+  })
+  it("because of the mockgoose", function () {
+    assert.equal(5, 5);
+  })
+  it("dependency", function () {
+    assert.equal(6, 6);
   })
 })
